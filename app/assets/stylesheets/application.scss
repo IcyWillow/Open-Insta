@@ -21,7 +21,7 @@ body {
 .hide-text{
   display: block;
   overflow: hidden;
-  text-indent: 100%;
+  text-indent: 190%;
   white-space: nowrap;
 }
 
@@ -41,4 +41,19 @@ body {
   background-position: -355px -200px;
   height: 24px;
   width: 24px;
+}
+
+.nav-item:not(first-child){
+  margin-left: 30px;
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0,.0975);
+  height: 77px;
+}
+
+.text-center{
+  display: block;
+  margin: 0 auto;
 }
