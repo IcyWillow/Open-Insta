@@ -58,6 +58,10 @@ body {
   margin: 0 auto;
 }
 
+.light-color {
+  color: #999;
+}
+
 //Landing
 .landing-left {
   .dummy-phone {
@@ -133,8 +137,29 @@ body {
   }
 }
 
+
 footer .nav-item {
   color: #003569 !important;
   font-size: 12px;
   font-weight: bold;
+}
+
+
+.carousel-fade {
+ .carousel-item.active {
+   opacity: 1;
+   display: block;
+ }
+
+  .carousel-item {
+    transition: opacity 0.6s ease-in-out;
+    opacity: 0;
+    position: relative;
+    display: block;
+  }
+
+  .carousel-item:not(.active){
+    position: absolute;
+    top: 0px;
+  }
 }
