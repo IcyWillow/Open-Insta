@@ -66,5 +66,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
-#gem install toastr-rails -v 1.0.3
+
 gem 'toastr-rails'
+gem 'carrierwave', '~> 1.0'
+gem 'cloudinary'
+gem 'figaro'
