@@ -19,11 +19,12 @@ class PhotoUploader < CarrierWave::Uploader::Base
   process :tags => ['post_picture']
 
   version :standard do
-    process :resize_to_fill => [300, 300, :north]
+    #Vorübergehend auf 650 anstatt 1080 gesetzt
+    process :resize_to_fill => [650, 650, :center]
   end
 
   version :thumbnail do
-    resize_to_fit(50, 50)
+    resize_to_fit(100, 100)
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:

@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   #get 'user/show'
   get '/user/:id', to: 'user#show', as: 'user'
 
-  root 'pages#home'
-  # devise_for :users
+
+
+  root 'posts#index'
+  # devise_for :userss
   devise_for :users, controllers: {registrations: 'registrations'}
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :users, only: [:index, :show]
