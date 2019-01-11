@@ -385,3 +385,26 @@ footer .nav-item {
   background-position: -353px -273px;
 }
 
+
+.comment-list {
+  height: 310px;
+  overflow: auto;
+}
+.post-show-img {
+  background-color: #fafafa;
+  margin: -10px 0;
+}
+
+.delete-post-icon {
+  color: #262626;
+  font-size: 20px;
+}
+
+.delete-comment {
+  witdh: 11px;
+  height: 11px;
+  background-position: -216px -112px;
+  float: right;
+  margin: 5px 0 0 10px;
+}
+
